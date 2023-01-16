@@ -5,14 +5,7 @@ After=google-fluentd.service syslog.target      # What is this line doing?
 [Service]
 Type=simple
 EnvironmentFile=/etc/systemd/system/env.txt
-ExecStart=/bin/bash -c "/usr/bin/docker run \
-    --env NAME='API' \
-    --name api \
-    --volume /tmp:/inputs \
-    --runtime=nvidia \
-    --rm api"
-ExecStop=/usr/bin/docker stop api
-ExecReload=/usr/bin/docker restart api
+ExecStart=/usr/bin/python3 /opt/api_src/api.py
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=api
