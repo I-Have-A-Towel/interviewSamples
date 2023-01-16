@@ -1,3 +1,8 @@
+"""
+    Can you describe what this list comprehension is doing?
+"""
+
+
 def double(x):
     return x * 2
 
