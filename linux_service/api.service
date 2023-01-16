@@ -1,0 +1,19 @@
+[Unit]
+Description=Sample API Service
+After=google-fluentd.service syslog.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/systemd/system/env.txt
+ExecStart=/bin/bash -c "/usr/bin/docker run \
+    --env NAME='API' \
+    --name api \
+    --volume /tmp:/inputs \
+    --runtime=nvidia \
+    --rm api"
+ExecStop=/usr/bin/docker stop api
+ExecReload=/usr/bin/docker restart api
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=api
+Restart=always
