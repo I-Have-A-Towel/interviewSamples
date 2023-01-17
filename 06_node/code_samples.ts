@@ -39,19 +39,5 @@ for (let n of myList) {
 }
 
 /**
- * Q3: How would you ensure that the 2nd element in array `myList` does NOT
- * get included in the resulting arrays `c` and `d`?
- */
-
-myList = [1, 2, 3, 4, 5];
-const c = myList.map(n => n * 2);
-
-myList = [1, 2, 3, 4, 5];
-let d = myList;
-for (let i in d) {
-  d[i] *= 2;
-}
-
-/**
- * Q4: Write a simple, typed promise function (it can just log "hello world") and use it in Promise.all.
+ * Q3: Write a simple, typed promise function (it can just log "hello world") and use it in Promise.all.
  */
