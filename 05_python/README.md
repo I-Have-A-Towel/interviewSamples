@@ -9,7 +9,3 @@ At a high level, how might you go about doing this?
 - Python
 - Threading, or maybe async/await?
 
-### Potential notes:
-- Watch the queue collection
-- Keep track of current # procs
-- start/stop procs when necessary to match queue length/3
