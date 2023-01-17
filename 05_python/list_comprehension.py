@@ -1,12 +1,23 @@
-"""
-   Q1: Can you describe what this list comprehension is doing?
-"""
+# Step 1: Create a list comprehension that generates the squares of the numbers from 0 to 9.
 
 
-def double(x):
-    return x * 2
 
 
-val = [double(num) for num in range(1, 10) if num % 2 == 0]
+# Step 2: Use a conditional expression in the list comprehension to only include the squares of even numbers.
 
-print(val)
+
+
+
+# Step 3: Add a nested list comprehension to create a list of tuples, where each tuple contains the number and its square.
+
+
+
+
+# Step 4: Use the zip function to combine the list of even numbers and the list of even squares into a list of tuples, where each tuple contains the number and its square.
+
+
+
+
+# Step 5: Use the zip function to combine a list of even numbers and the list of even squares into a list of tuples, where each tuple contains the number and its square.
+
+
