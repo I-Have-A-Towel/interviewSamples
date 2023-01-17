@@ -53,5 +53,5 @@ for (let i in d) {
 }
 
 /**
- * Q4: Write a simple, typed promise function and use it in Promise.all.
+ * Q4: Write a simple, typed promise function (it can just log "hello world") and use it in Promise.all.
  */
