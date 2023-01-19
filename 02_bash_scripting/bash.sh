@@ -3,7 +3,8 @@
 ###
 # Q1: Can you describe what this script is intended to do?
 #
-# Q2: When the script runs, it gives error: `InvalidUrlError: Invalid destination path: /tmp/sorted_files/descriptions` why might this be?
+# Q2: When the script runs, it gives error: `InvalidUrlError: Invalid 
+#     destination path: /tmp/sorted_files/descriptions` why might this be?
 ###
 
 tmp_dir="/tmp/gsurl_list_files"
