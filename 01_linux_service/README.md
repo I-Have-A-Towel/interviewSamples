@@ -1,6 +1,8 @@
 
 ## Scenario
-You’ve built a simple docker image that runs an API in python using Flask. You’ve put it on a Linux server and created a service unit file so it will be started on boot and re-started on failure with the appropriate mounts and environment variables. Issue: when the server boots up, the service appears to just keep re-starting. 
+You have a simple docker image that runs an API in python using Flask. You’ve put it on a Linux server and created a service unit file so it will be started on boot and re-started on failure with the appropriate mounts and environment variables. 
+
+**Issue: When the server boots up, the service appears to just keep re-starting.**
 
 ### Question
 

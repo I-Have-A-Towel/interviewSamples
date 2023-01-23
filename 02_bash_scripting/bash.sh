@@ -13,8 +13,9 @@ save_dir="/tmp/sorted_files"
 if [[ ! -d $tmp_dir ]]; then
   mkdir -p $tmp_dir
 fi
-rm $tmp_dir/*.txt
-
+if [[ ! -d $save_dir ]]; then
+  mkdir -p $save_dir
+fi
 
 gsuri_files_dirs=$(python -c "from helpers import get_files_list; gsurlfiles = get_files_list(\"$tmp_dir\"); print(gsurlfiles);")
 echo $gsuri_files_dirs
@@ -22,11 +23,6 @@ echo $gsuri_files_dirs
 if [[ "$gsuri_files_dirs" = *"none" ]]; then
   echo "no files"
   exit 0
-fi
-
-
-if [[ "$save_dir" != "gs://"* ]]; then
-  mkdir $save_dir
 fi
 
 for gsuri_file_dir in ${gsuri_files_dirs[@]}
