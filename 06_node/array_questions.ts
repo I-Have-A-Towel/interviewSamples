@@ -1,4 +1,4 @@
-const myArr: number[] = [1, 1, 2, 2, 3, 4, 4, 5, 5, 6, 7];
+const myArr: number[] = [1, 6, 2, 7, 3, 4, 4, 5, 2, 5, 6, 1, 7];
 
 /**
  * Q1: How would you keep only unique values from the array myArr
@@ -37,7 +37,3 @@ myList = [1, 2, 3, 4, 5];
 for (let n of myList) {
   n *= 2;
 }
-
-/**
- * Q3: Write a simple, typed promise function (it can just log "hello world") and use it in Promise.all.
- */
