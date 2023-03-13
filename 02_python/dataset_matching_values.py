@@ -22,7 +22,7 @@ ingredient_dataset = [
     {"key": "Philo Dough", "embedding_value": 2},
     {"key": "Cream Cheese", "embedding_value": 5},
     {"key": "Flour", "embedding_value": 9},
-    {"key": "Heavy Cream", "embedding_value": 6},
+    {"key": "Heavy Cream", "embedding_value": 6.5},
 ]
 
 # Write your code here using the above datasets
