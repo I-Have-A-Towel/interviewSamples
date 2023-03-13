@@ -4,9 +4,10 @@ After=google-fluentd.service syslog.target      # What is this line doing?
 
 [Service]
 Type=simple
-EnvironmentFile=/etc/systemd/system/env.txt
+Environment="INPUT_DIR=/tmp/inputs"
 ExecStart=/usr/bin/python3 /opt/api_src/api.py
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=api
+
 Restart=always

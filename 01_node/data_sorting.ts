@@ -26,7 +26,7 @@ import { readdirSync } from 'fs';
 /**
  * Stubbed out function that would theoretically save `data` to the db
  * under the provided category
- * @param dbCollection - should be the media type (audio | video)
+ * @param category - should be the media type (audio | videos)
  * @param data - data about the song or video: trackTitle, filePath, genre
  * @returns empty Promises
  */
