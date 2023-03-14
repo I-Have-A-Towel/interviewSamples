@@ -9,8 +9,6 @@
 #  For example:  "Doughnut requires Flour"
 #########
 
-import numpy as np
-
 dessert_dataset = [
     {"key": "Apple Pie", "embedding_value": 1},
     {"key": "Cheesecake", "embedding_value": 4},
