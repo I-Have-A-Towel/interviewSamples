@@ -1,10 +1,7 @@
-###
-# What might be the benefit of:
-#   a) splitting the installation/setup activities into separate RUN statements
-#       ie: apt-get installations, pip installations, largelib download
-#   b) running them in a specific order (other than necessity)
-#   c) setting `ENV PYTHONUNBUFFERED=1`
-##
+######
+#  Q: Am I better-written than api2.Dockerfile? Why or why not?
+#########
+
 FROM python:3.7
 
 RUN mkdir app

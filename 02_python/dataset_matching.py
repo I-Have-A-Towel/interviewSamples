@@ -1,14 +1,3 @@
-######
-#  Q: Write a function / code snippet that does the following:
-#
-#  Match up dessert dataset items with appropriate ingredient_dataset items
-#  according to closest-match of the embedding_values.
-#  Once matched, display the list results in the following manner:
-#  "Dessert" requires "Ingredient"
-#
-#  For example:  "Doughnut requires Flour"
-#########
-
 import numpy as np
 
 dessert_dataset = [
@@ -24,5 +13,16 @@ ingredient_dataset = [
     {"key": "Flour", "embedding_value": np.array([9, 1, 9, 4])},
     {"key": "Heavy Cream", "embedding_value": np.array([1, 2, 1, 0])},
 ]
+
+######
+#  Q: Write a function / code snippet that does the following:
+#
+#  Match up dessert dataset items with appropriate ingredient_dataset items
+#  according to closest-match of the embedding_values.
+#  Once matched, display the list results in the following manner:
+#  "Dessert" requires "Ingredient"
+#
+#  For example:  "Doughnut requires Flour"
+#########
 
 # Write your code here using the above datasets
