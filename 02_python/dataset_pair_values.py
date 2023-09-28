@@ -13,7 +13,7 @@ dessert_dataset = [
     {"key": "Apple Pie", "embedding_value": 1},
     {"key": "Cheesecake", "embedding_value": 4},
     {"key": "Chocolate Cake", "embedding_value": 8},
-    {"key": "Chocolate Mousse", "embedding_value": 5},
+    {"key": "Chocolate Mousse", "embedding_value": 7},
 ]
 
 ingredient_dataset = [
