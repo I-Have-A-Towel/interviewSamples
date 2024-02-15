@@ -6,6 +6,8 @@ FROM python:3.7
 
 RUN mkdir /app && wget https://example.com/largelibthatdoesnotchange -O /app/largelibthatdoesnotchange;
 
+RUN echo "echo 'Simulating long-running make process...'; sleep 300" > /app/fake_make.sh && chmod +x /app/fake_make.sh
+
 RUN apt-get update \
   && apt-get clean \
   && apt-get -y install vim

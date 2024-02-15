@@ -1,26 +1,21 @@
-######
-#  Q: Write a function / code snippet that does the following:
-#
-#  Match up dessert dataset items with appropriate ingredient_dataset items
-#  according to closest-match of the embedding_values.
-#  Once matched, display the list results in the following manner:
-#  "Dessert" requires "Ingredient"
-#
-#  For example:  "Doughnut requires Flour"
-#########
-
 dessert_dataset = [
-    {"key": "Apple Pie", "embedding_value": 1},
-    {"key": "Cheesecake", "embedding_value": 4},
-    {"key": "Chocolate Cake", "embedding_value": 8},
-    {"key": "Chocolate Mousse", "embedding_value": 7},
+    {"key": "Apple Pie", "embedding": 1},
+    {"key": "Cheesecake", "embedding": 4},
+    {"key": "Chocolate Cake", "embedding": 8},
+    {"key": "Chocolate Mousse", "embedding": 7},
 ]
 
 ingredient_dataset = [
-    {"key": "Philo Dough", "embedding_value": 2},
-    {"key": "Cream Cheese", "embedding_value": 5},
-    {"key": "Flour", "embedding_value": 9},
-    {"key": "Heavy Cream", "embedding_value": 6.5},
+    {"key": "Philo Dough", "embedding": 2},
+    {"key": "Cream Cheese", "embedding": 5},
+    {"key": "Flour", "embedding": 9},
+    {"key": "Heavy Cream", "embedding": 6.5},
 ]
 
-# Write your code here using the above datasets
+######
+# Given two datasets containing dessert and ingredient information,
+# your task is to write a function or code snippet to match each
+# dessert with the most suitable ingredient based on the similarity
+# of their embedding values. Each dessert and ingredient has an
+# associated embedding value represented as a NumPy array.
+#########
