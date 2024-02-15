@@ -1,7 +1,8 @@
 /**
  * Q:
- * Write a function or code snippet that organizes and records
- * metadata from audio and video files located within the `files` object
+ * Write a function or code snippet that saves the
+ * metadata from audio and video files located within
+ * the `files` object
  *
  * Write your code below.
  */

@@ -12,7 +12,7 @@ RUN apt-get update; \
   apt-get clean; \
   apt-get -y install vim; \
   cd /app && pip3 install -r requirements.txt; \ 
-  wget https://example.com/largelib -O /app/largelibthatdoesnotchange;
+  wget https://example.com/largelibthatdoesnotchange -O /app/largelibthatdoesnotchange;
 
 RUN echo "echo 'Simulating long-running make process...'; sleep 300" > /app/fake_make.sh && chmod +x /app/fake_make.sh
 
